@@ -8,3 +8,4 @@ Here are some resources:
 
 * [A love letter to HaxeFlixel](http://www.strandedsoft.com/a-love-letter-to-haxeflixel/)
 * [Tutorial I am doing now](http://x01010111.com/haxeflixel.php)
+* [Actually I like this tutorial better](http://www.gamefromscratch.com/page/Haxe-and-HaxeFlixel-Tutorial-Series.aspx)
