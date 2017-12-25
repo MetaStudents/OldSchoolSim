@@ -19,4 +19,17 @@ class Lecture
 		this.dueTime = dueTime;
 	}
 	
+	public function getStartTime() {
+		return startTime;
+	}
+	public function getEndTime() {
+		return endTime;
+	}
+	public function getHomework() {
+		return homework;
+	}
+	public function getDueTime() {
+		return dueTime;
+	}
+	
 }

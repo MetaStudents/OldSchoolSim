@@ -15,4 +15,8 @@ class Homework
 		this.title = title;
 	}
 	
+	public function getSize(){
+		return size;
+	}
+	
 }
