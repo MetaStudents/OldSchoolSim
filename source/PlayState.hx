@@ -14,7 +14,6 @@ class PlayState extends FlxState
 	
 	private var scheduler:Scheduler;
 	
-	
 	override public function create():Void
 	{
 		var scheduleJson = openfl.Assets.getText("assets/schedule.json");
