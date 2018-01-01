@@ -3,6 +3,7 @@ package;
 import flixel.FlxState;
 //import source.Bar;
 import flixel.util.FlxColor;
+import haxe.Json;
 
 class PlayState extends FlxState
 {
@@ -13,26 +14,20 @@ class PlayState extends FlxState
 	
 	private var scheduler:Scheduler;
 	
+	
 	override public function create():Void
 	{
+		var scheduleJson = openfl.Assets.getText("assets/schedule.json");
+		trace(scheduleJson);
+		var schedule = Json.parse(scheduleJson);
 		scheduler = new Scheduler(60, 30);
 		
-		var lecture:Lecture = {
-			startTime : { week:0, day:0, hour:1, minute:0 },
-			endTime : { week:0, day:0, hour:2, minute:0 },
-			dueTime : { week:0, day:2, hour:1, minute:0 },
-			homework : {
-				size : 50,
-				title : "Assignment 1"
-			}
-		};
-		
 		bgColor = FlxColor.WHITE;
-		bar1 = new Bar(0.03, scheduler, 200, 400, [lecture]);
+		bar1 = new Bar(0.03, scheduler, 200, 400, schedule[0]);
 		add(bar1);
-		bar2 = new Bar(0.06, scheduler, 300, 400);
+		bar2 = new Bar(0.06, scheduler, 300, 400, schedule[1]);
 		add(bar2);
-		bar3 = new Bar(0.09, scheduler, 400, 400);
+		bar3 = new Bar(0.09, scheduler, 400, 400, schedule[2]);
 		add(bar3);
 		workRate = 30;
 		

@@ -1,0 +1,62 @@
+[
+  [
+    {
+      "startTime" : { "week":0, "day":0, "hour":1, "minute":0 },
+      "endTime" : { "week":0, "day":0, "hour":2, "minute":0 },
+      "dueTime" : { "week":0, "day":2, "hour":1, "minute":0 },
+      "homework" : {
+        "size" : 50,
+        "title" : "Assignment 1"
+      }
+    },
+    {
+      "startTime" : { "week":0, "day":2, "hour":1, "minute":0 },
+      "endTime" : { "week":0, "day":2, "hour":2, "minute":0 },
+      "dueTime" : { "week":0, "day":4, "hour":1, "minute":0 },
+      "homework" : {
+        "size" : 50,
+        "title" : "Assignment 2"
+      }
+    }
+  ],
+  [
+    {
+      "startTime" : { "week":0, "day":0, "hour":2, "minute":0 },
+      "endTime" : { "week":0, "day":0, "hour":3, "minute":0 },
+      "dueTime" : { "week":0, "day":2, "hour":2, "minute":0 },
+      "homework" : {
+        "size" : 25,
+        "title" : "Are you alive?"
+      }
+    },
+    {
+      "startTime" : { "week":0, "day":2, "hour":2, "minute":0 },
+      "endTime" : { "week":0, "day":2, "hour":3, "minute":0 },
+      "dueTime" : { "week":0, "day":4, "hour":2, "minute":0 },
+      "homework" : {
+        "size" : 25,
+        "title" : "wut"
+      }
+    }
+  ],
+  [
+    {
+      "startTime" : { "week":0, "day":0, "hour":3, "minute":0 },
+      "endTime" : { "week":0, "day":0, "hour":4, "minute":0 },
+      "dueTime" : { "week":0, "day":2, "hour":3, "minute":0 },
+      "homework" : {
+        "size" : 60,
+        "title" : "Who are you?"
+      }
+    },
+    {
+      "startTime" : { "week":0, "day":2, "hour":3, "minute":0 },
+      "endTime" : { "week":0, "day":2, "hour":4, "minute":0 },
+      "dueTime" : { "week":0, "day":4, "hour":3, "minute":0 },
+      "homework" : {
+        "size" : 20,
+        "title" : "What is your name?"
+      }
+    }
+  ]
+]
