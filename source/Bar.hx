@@ -57,8 +57,8 @@ class Bar extends FlxSprite
 	
 	private function getHomework(){
 		if (currentLecture < lectures.length){
-			if (scheduler.getTime().greaterThanOrEqual(lectures[currentLecture].getEndTime())){
-				y -= lectures[currentLecture].getHomework().getSize();
+			if (scheduler.isPast(lectures[currentLecture].endTime)){
+				y -= lectures[currentLecture].homework.size;
 				currentLecture++;
 			}
 		}

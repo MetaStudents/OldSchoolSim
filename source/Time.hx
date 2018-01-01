@@ -4,16 +4,15 @@ package;
  * ...
  * @author test
  */
-class Time 
-{
-	private var week:Int;
-	private var day:Int;
-	private var hour:Int;
-	private var minute:Int;
+typedef Time = {
+	var week:Int;
+	var day:Int;
+	var hour:Int;
+	var minute:Int;
 	
 	//Is this a good idea?
 	//private var lenience:Int;
-	
+	/*
 	public function new(week:Int, day:Int, hour:Int, minute:Int) 
 	{
 		this.week = week;
@@ -46,4 +45,5 @@ class Time
 		}
 		return false;
 	}
+	*/
 }

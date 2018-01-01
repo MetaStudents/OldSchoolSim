@@ -4,14 +4,13 @@ package;
  * ...
  * @author test
  */
-class Lecture 
-{
+typedef Lecture = {
 
-	private var startTime:Time;
-	private var endTime:Time;
-	private var homework:Homework;
-	private var dueTime:Time;
-	public function new(startTime:Time, endTime:Time, homework:Homework, ?dueTime:Time)
+	var startTime:Time;
+	var endTime:Time;
+	var homework:Homework;
+	var dueTime:Time;
+	/*public function new(startTime:Time, endTime:Time, homework:Homework, ?dueTime:Time)
 	{
 		this.startTime = startTime;
 		this.endTime = endTime;
@@ -30,6 +29,6 @@ class Lecture
 	}
 	public function getDueTime() {
 		return dueTime;
-	}
+	}*/
 	
 }

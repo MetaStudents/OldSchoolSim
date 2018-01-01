@@ -17,8 +17,18 @@ class PlayState extends FlxState
 	{
 		scheduler = new Scheduler(60, 30);
 		
+		var lecture:Lecture = {
+			startTime : { week:0, day:0, hour:1, minute:0 },
+			endTime : { week:0, day:0, hour:2, minute:0 },
+			dueTime : { week:0, day:2, hour:1, minute:0 },
+			homework : {
+				size : 50,
+				title : "Assignment 1"
+			}
+		};
+		
 		bgColor = FlxColor.WHITE;
-		bar1 = new Bar(0.03, scheduler, 200, 400, [new Lecture(new Time(0,0,1,0), new Time(0,0,2,0), new Homework(50))]);
+		bar1 = new Bar(0.03, scheduler, 200, 400, [lecture]);
 		add(bar1);
 		bar2 = new Bar(0.06, scheduler, 300, 400);
 		add(bar2);

@@ -73,8 +73,32 @@ class Scheduler
 	public function getMinute(){
 		return Math.floor(timer.progress * 60);
 	}
-	public function getTime(){
+	/*public function getTime(){
 		return new Time(getWeek(), getDay(), getHour(), getMinute());
+	}*/
+	public function isPast(time:Time){
+		if (week > time.week){
+			return true;
+		}
+		else if (week < time.week){
+			return false;
+		}
+		else if (day > time.day){
+			return true;
+		}
+		else if (day < time.day){
+			return false;
+		}
+		else if (hour > time.hour){
+			return true;
+		}
+		else if (hour < time.hour){
+			return false;
+		}
+		else if (getMinute() >= time.minute){
+			return true;
+		}
+		return false;
 	}
 	
 	static private function nullFunction(t:FlxTimer):Void
