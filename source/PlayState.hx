@@ -18,7 +18,7 @@ class PlayState extends FlxState
 	{
 		var scheduleJson = openfl.Assets.getText("assets/schedule.json");
 		trace(scheduleJson);
-		var schedule = Json.parse(scheduleJson);
+		var schedule:Array<Array<Lecture>> = Json.parse(scheduleJson);
 		scheduler = new Scheduler(60, 30);
 		
 		bgColor = FlxColor.WHITE;
