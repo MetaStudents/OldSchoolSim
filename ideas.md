@@ -1,5 +1,5 @@
 - implement something equivalent to java.util.TreeSet or C++'s std::set so we can have all the homeworks, lectures, etc guaranteed unique and in order (haxe standard library is missing this)
 - create lecture schedule generators
 - generate exams and homeworks in real time, more loosely coupled with the lectures
-- *GRAPHICS*
+- **GRAPHICS**
 - make use of the new and unfinished Course class
